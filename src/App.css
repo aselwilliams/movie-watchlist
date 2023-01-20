@@ -76,4 +76,7 @@ main {
   right: 0;
   text-align: center;
 }
-
+.dark {
+  background: #272727;
+  color: white;
+}
