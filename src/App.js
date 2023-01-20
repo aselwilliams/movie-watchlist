@@ -14,8 +14,7 @@ function App() {
   const [page, setPage] = useState(1)
 
   const getData = () => {
-  axios.get(`${baseURL}?api_key=${process.env.REACT_APP_API_KEY}&language=en-US&page=${page}`)
-  // axios.get('https://api.themoviedb.org/3/movie/297802?api_key=5309d85556db18147a940de7ee7105be&append_to_response=images,credits')
+    axios.get(`${baseURL}?api_key=${process.env.REACT_APP_API_KEY}&language=en-US&page=${page}`)
     .then((res)=>{
       console.log(res.data.results)
       setMovieList(res.data.results)
